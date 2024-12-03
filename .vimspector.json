@@ -1,0 +1,24 @@
+{
+  "configurations": {
+    "Python launch": {
+      "adapter": "debugpy",
+      "default": false,
+      "configuration": {
+        "python": "${workspaceRoot}/.venv/bin/python",
+        "request": "launch",
+        "program": "${workspaceRoot}/main.py",
+        "args": [],
+        "justMyCode": true,
+        "cwd": "${workspaceRoot}"
+      },
+      "breakpoints": {
+        "exception": {
+          "raised": "N",
+          "caught": "N",
+          "uncaught": "Y",
+          "userUnhandled": "N"
+        }
+      }
+    }
+  }
+}
