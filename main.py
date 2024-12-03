@@ -17,5 +17,5 @@ async def read_item(name: str = "world"):
 if __name__ == "__main__":
     import uvicorn
 
-    # В качестве app нужно указать строку для импорта
+    # Для hot reload в качестве app нужно указать строку для импорта
     uvicorn.run("main:app", reload=True)
