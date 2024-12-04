@@ -17,5 +17,7 @@ async def read_item(name: str = "world"):
 if __name__ == "__main__":
     import uvicorn
 
-    # Для hot reload в качестве app нужно указать строку для импорта
+    # Для hot reload в качестве app нужно указать строку для импорта:
+    # * main — имя файла без расширения;
+    # * app — имя переменной, содержажей экземпляр класса FastAPI.
     uvicorn.run("main:app", reload=True)
